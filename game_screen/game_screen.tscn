@@ -1,5 +1,6 @@
-[gd_scene load_steps=6 format=3 uid="uid://cm0283hu34evf"]
+[gd_scene load_steps=7 format=3 uid="uid://cm0283hu34evf"]
 
+[ext_resource type="Script" path="res://game_screen/game_screen.gd" id="1_ci2s8"]
 [ext_resource type="LabelSettings" uid="uid://co817j3wc6wd" path="res://GM_32_dark_grey.tres" id="1_oy86j"]
 [ext_resource type="Texture2D" uid="uid://cbtgdcgkm25ru" path="res://assets/ui/blue_button00.png" id="2_etqve"]
 [ext_resource type="Texture2D" uid="uid://dliauay8tgdev" path="res://assets/ui/yellow_button00.png" id="3_lpsn8"]
@@ -13,6 +14,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_ci2s8")
 
 [node name="HB" type="HBoxContainer" parent="."]
 layout_mode = 1
