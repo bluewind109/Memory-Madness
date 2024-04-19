@@ -4,10 +4,16 @@ extends Control
 
 @onready var exit_sound = $ExitSound
 @onready var tile_container = $HB/MC1/TileContainer
-@onready var scorer = $Scorer
+@onready var scorer: Scorer = $Scorer
+@onready var moves_label = $HB/MC2/VB/HB/MovesLabel
+@onready var pairs_label = $HB/MC2/VB/HB2/PairsLabel
 
 func _ready():
 	SignalManager.on_level_selected.connect(on_level_selected)
+	
+func _process(_delta):
+	moves_label.text = scorer.get_moves_made_str()	
+	pairs_label.text = scorer.get_pairs_made_str()	
 	
 func add_memory_tile(
 	ii_dict: Dictionary,

@@ -1,5 +1,7 @@
 extends Node
 
+class_name Scorer
+
 @onready var sound = $Sound
 @onready var reveal_timer = $RevealTimer
 
@@ -14,6 +16,12 @@ func _ready():
 
 func _process(_delta):
 	pass
+	
+func get_moves_made_str() -> String:
+	return str(_moves_made)
+	
+func get_pairs_made_str() -> String:
+	return "%s / %s" % [_pairs_made, _target_pairs]
 
 func clear_new_game(target_pairs: int) -> void:
 	_selections.clear()
