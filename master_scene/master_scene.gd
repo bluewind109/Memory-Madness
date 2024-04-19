@@ -15,6 +15,7 @@ func show_game(val: bool) -> void:
 
 func on_game_exit_pressed() -> void:
 	show_game(false)
+	GameManager.clear_nodes_of_group(GameManager.GROUP_TILE)
 	SoundManager.play_sound(bgm, SoundManager.SOUND_MAIN_MENU)
 
 func on_level_selected(level_num: int) -> void:

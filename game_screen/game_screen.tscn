@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://cm0283hu34evf"]
+[gd_scene load_steps=8 format=3 uid="uid://cm0283hu34evf"]
 
 [ext_resource type="Script" path="res://game_screen/game_screen.gd" id="1_ci2s8"]
 [ext_resource type="LabelSettings" uid="uid://co817j3wc6wd" path="res://GM_32_dark_grey.tres" id="1_oy86j"]
 [ext_resource type="Texture2D" uid="uid://cbtgdcgkm25ru" path="res://assets/ui/blue_button00.png" id="2_etqve"]
+[ext_resource type="PackedScene" uid="uid://dt2mfp0udbn2u" path="res://memory_tile/memory_tile.tscn" id="2_xvsyk"]
 [ext_resource type="Texture2D" uid="uid://dliauay8tgdev" path="res://assets/ui/yellow_button00.png" id="3_lpsn8"]
 [ext_resource type="Texture2D" uid="uid://dkxsrjuwmb6hk" path="res://assets/ui/green_button00.png" id="4_qkj7h"]
 [ext_resource type="LabelSettings" uid="uid://c8cfirn50u5j" path="res://GM_32_white.tres" id="5_xygy0"]
@@ -15,6 +16,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_ci2s8")
+mem_tile_scene = ExtResource("2_xvsyk")
 
 [node name="HB" type="HBoxContainer" parent="."]
 layout_mode = 1
