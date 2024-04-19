@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://bsovt4o0eiscv"]
+
+[ext_resource type="Script" path="res://scorer/scorer.gd" id="1_cbh3x"]
+
+[node name="Scorer" type="Node"]
+script = ExtResource("1_cbh3x")
+
+[node name="Sound" type="AudioStreamPlayer" parent="."]
+
+[node name="RevealTimer" type="Timer" parent="."]
+wait_time = 1.2
