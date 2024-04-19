@@ -33,6 +33,12 @@ func on_selection_disabled() -> void:
 	
 func on_selection_enabled() -> void:
 	_can_select = true
+	
+func set_can_select(val: bool) -> void:
+	_can_select = val
+
+func get_can_select() -> bool:
+	return _can_select
 
 func _on_pressed():
 	if (_can_select == true):
