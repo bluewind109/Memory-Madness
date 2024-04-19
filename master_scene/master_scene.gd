@@ -18,6 +18,6 @@ func on_game_exit_pressed() -> void:
 	GameManager.clear_nodes_of_group(GameManager.GROUP_TILE)
 	SoundManager.play_sound(bgm, SoundManager.SOUND_MAIN_MENU)
 
-func on_level_selected(level_num: int) -> void:
+func on_level_selected(_level_num: int) -> void:
 	show_game(true)
 	SoundManager.play_sound(bgm, SoundManager.SOUND_IN_GAME)
